@@ -14,7 +14,7 @@
     <value><![CDATA[""]]></value>
   </tags>
   <tags key="operationName">
-    <value><![CDATA["drug-Selector"]]></value>
+    <value><![CDATA["drug-selector-op"]]></value>
   </tags>
   <tags key="exposedAtRuntime">
     <value><![CDATA[true]]></value>
