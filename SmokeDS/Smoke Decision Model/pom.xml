@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>decisions.smoketest.smokeds</groupId>
+        <artifactId>smokeDS</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>decisions.smoketest.smokeds</groupId>
+    <artifactId>smokeDecisionModel</artifactId>
+    <version>LATEST-SNAPSHOT</version>
+    <packaging>decision-library</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.ibm.decision</groupId>
+                <artifactId>build-maven-plugin</artifactId>
+                <configuration>
+                    <deployments>
+                        <deployment>
+                            <name>Smoke-Decision-Model</name>
+                        </deployment>
+                    </deployments>
+                <packageName>decisions.smoketest.smokeds.smokedecisionmodel</packageName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+<dependencies>
+        <dependency>
+            <groupId>decisions.smoketest.smokeds</groupId>
+            <artifactId>smokeDataModel</artifactId>
+            <type>decision-library</type>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>decisions.smoketest.smokeds</groupId>
+            <artifactId>drugSelector</artifactId>
+            <type>decision-library</type>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>

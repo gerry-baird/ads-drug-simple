@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Smoke Decision Model">
+  <name>Smoke-Decision-Model</name>
+  <uuid>8abececf-a4dd-4de1-903f-c2b2f2cf9ec5</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#b4d8b5e6-7bdc-4750-91aa-fdc8629f7fb2"/>
+  <targetRuleProject href="../../Smoke%20Decision%20Model#2a351332-3204-4a65-8d31-81a058face12"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,40 @@
+
+# decisions.smoketest.smokeds.drugSelector.Error
+decisions.smoketest.smokeds.drugSelector.Error#concept.label = Output error
+decisions.smoketest.smokeds.drugSelector.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = a new {Output error} where {0, code} {1, message} 
+decisions.smoketest.smokeds.drugSelector.Error.code#phrase.action = set the code of {this} to {code}
+decisions.smoketest.smokeds.drugSelector.Error.code#phrase.navigation = {code} of {this}
+decisions.smoketest.smokeds.drugSelector.Error.message#phrase.action = set the message of {this} to {message}
+decisions.smoketest.smokeds.drugSelector.Error.message#phrase.navigation = {message} of {this}
+
+# decisions.smoketest.smokeds.drugSelector.Input
+decisions.smoketest.smokeds.drugSelector.Input#concept.label = ML model input
+decisions.smoketest.smokeds.drugSelector.Input.Input(java.lang.Long,java.lang.Long,java.lang.String,java.lang.String)#phrase.navigation = a new {ML model input} where {0, age} {1, bmi} {2, bp} {3, gender} 
+decisions.smoketest.smokeds.drugSelector.Input.age#phrase.action = set the age of {this} to {age}
+decisions.smoketest.smokeds.drugSelector.Input.age#phrase.addition_setter = add {age} to the age of {this}
+decisions.smoketest.smokeds.drugSelector.Input.age#phrase.navigation = {age} of {this}
+decisions.smoketest.smokeds.drugSelector.Input.age#phrase.subtraction_setter = subtract {age} from the age of {this}
+decisions.smoketest.smokeds.drugSelector.Input.bmi#phrase.action = set the bmi of {this} to {bmi}
+decisions.smoketest.smokeds.drugSelector.Input.bmi#phrase.addition_setter = add {bmi} to the bmi of {this}
+decisions.smoketest.smokeds.drugSelector.Input.bmi#phrase.navigation = {bmi} of {this}
+decisions.smoketest.smokeds.drugSelector.Input.bmi#phrase.subtraction_setter = subtract {bmi} from the bmi of {this}
+decisions.smoketest.smokeds.drugSelector.Input.bp#phrase.action = set the bp of {this} to {bp}
+decisions.smoketest.smokeds.drugSelector.Input.bp#phrase.navigation = {bp} of {this}
+decisions.smoketest.smokeds.drugSelector.Input.gender#phrase.action = set the gender of {this} to {gender}
+decisions.smoketest.smokeds.drugSelector.Input.gender#phrase.navigation = {gender} of {this}
+
+# decisions.smoketest.smokeds.drugSelector.Output
+decisions.smoketest.smokeds.drugSelector.Output#concept.label = ML model output
+decisions.smoketest.smokeds.drugSelector.Output.Output(java.lang.String,java.util.List)#phrase.navigation = a new {ML model output} where {0, prediction} {1, probability} 
+decisions.smoketest.smokeds.drugSelector.Output.addTo_probability(java.lang.Double)#phrase.action = add {0} to the probabilities of {this}
+decisions.smoketest.smokeds.drugSelector.Output.clear_probability()#phrase.action = clear the probabilities of {this}
+decisions.smoketest.smokeds.drugSelector.Output.error#phrase.action = set the error of {this} to {error}
+decisions.smoketest.smokeds.drugSelector.Output.error#phrase.clearer = clear the error of {this}
+decisions.smoketest.smokeds.drugSelector.Output.error#phrase.navigation = {error} of {this}
+decisions.smoketest.smokeds.drugSelector.Output.inError()#phrase.navigation = {this} is in error
+decisions.smoketest.smokeds.drugSelector.Output.prediction#phrase.action = set the prediction of {this} to {prediction}
+decisions.smoketest.smokeds.drugSelector.Output.prediction#phrase.navigation = {prediction} of {this}
+decisions.smoketest.smokeds.drugSelector.Output.probability#phrase.action = set the probabilities of {this} to {probability}
+decisions.smoketest.smokeds.drugSelector.Output.probability#phrase.navigation = {probability} of {this}
+decisions.smoketest.smokeds.drugSelector.Output.removeFrom_probability(java.lang.Double)#phrase.action = remove {0} from the probabilities of {this}
+decisions.smoketest.smokeds.drugSelector.Output.run(decisions.smoketest.smokeds.drugSelector.Input)#phrase.navigation = predict({0})

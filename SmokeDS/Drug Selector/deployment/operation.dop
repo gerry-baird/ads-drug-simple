@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Drug Selector">
+  <name>Drug-Selector</name>
+  <uuid>682469e2-fcbd-45eb-a147-7c0f1633c965</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#2358c7aa-42b4-4baf-a5d7-e82996177242"/>
+  <targetRuleProject href="../../Drug%20Selector#1e2ad670-e442-493d-aef7-639d83d039de"/>
+  <tags key="ProviderType">
+    <value><![CDATA[OPS]]></value>
+  </tags>
+  <tags key="ProviderId">
+    <value><![CDATA[disconnectedProvider]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

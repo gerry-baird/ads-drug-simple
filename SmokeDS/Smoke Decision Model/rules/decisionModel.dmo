@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>b4d8b5e6-7bdc-4750-91aa-fdc8629f7fb2</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="customer">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Customer" collection="false" name="customer"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="customer" typeRef="Customer"/>
+    </inputData>
+    <decision id="node_1" name="Valid">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Customer" collection="false" name="customer"/>
+                <output bomType="java.lang.Boolean" collection="false" name="Valid"/>
+                <rule defaultRule="true" href="node_1/Default%20to%20False.drl" kind="BusinessRule" name="Default to False"/>
+                <rule defaultRule="false" href="node_1/Valid.drl" kind="BusinessRule" name="Valid"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Valid" typeRef="java.lang.Boolean"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_2" name="Decision 2">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Customer" collection="false" name="customer"/>
+                <input bomType="java.lang.Boolean" collection="false" name="Valid"/>
+                <output bomType="java.lang.String" collection="false" name="Decision 2"/>
+                <rule defaultRule="false" href="node_2/Valid%20Customer%20Prediction.drl" kind="BusinessRule" name="Valid Customer Prediction"/>
+                <rule defaultRule="true" href="node_2/Invalid%20Customers.drl" kind="BusinessRule" name="Invalid Customers"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_2_ii" name="Decision 2" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_3"/>
+        </knowledgeRequirement>
+    </decision>
+    <businessKnowledgeModel id="node_3" name="Drug Selector">
+        <extensionElements>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
+            </properties>
+        </extensionElements>
+        <variable name="Drug Selector" typeRef="java.lang.String"/>
+        <encapsulatedLogic typeRef="java.lang.String">
+            <formalParameter name="customer" typeRef="Customer"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.smoketest.smokeds.drugSelector.Drug_Selector"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(Customer)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

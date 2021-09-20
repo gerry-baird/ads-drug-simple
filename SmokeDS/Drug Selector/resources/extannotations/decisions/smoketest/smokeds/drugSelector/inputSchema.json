@@ -1,0 +1,24 @@
+{
+  "id" : "auto_ai_kb_input_schema",
+  "fields" : [ {
+    "name" : "Age",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "Age"
+  }, {
+    "name" : "Gender",
+    "type" : "string",
+    "nullable" : true,
+    "jsonName" : "Gender"
+  }, {
+    "name" : "BP",
+    "type" : "string",
+    "nullable" : true,
+    "jsonName" : "BP"
+  }, {
+    "name" : "BMI",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "BMI"
+  } ]
+}

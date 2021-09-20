@@ -1,0 +1,8 @@
+{
+  "customer": {
+    "age": 72,
+    "bmi": 38,
+    "bp": "H",
+    "gender": "M"
+  }
+}

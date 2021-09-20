@@ -1,0 +1,16 @@
+
+# Customer
+Customer#concept.label = Customer
+Customer.Customer(java.lang.Long,double,java.lang.String,java.lang.String)#phrase.navigation = a new {Customer} where {0, age} {1, bmi} {2, bp} {3, gender}
+Customer.age#phrase.action = set the age of {this} to {age}
+Customer.age#phrase.addition_setter = add {age} to the age of {this}
+Customer.age#phrase.navigation = {age} of {this}
+Customer.age#phrase.subtraction_setter = subtract {age} from the age of {this}
+Customer.bmi#phrase.action = set the bmi of {this} to {bmi}
+Customer.bmi#phrase.addition_setter = add {bmi} to the bmi of {this}
+Customer.bmi#phrase.navigation = {bmi} of {this}
+Customer.bmi#phrase.subtraction_setter = subtract {bmi} from the bmi of {this}
+Customer.bp#phrase.action = set the bp of {this} to {bp}
+Customer.bp#phrase.navigation = {bp} of {this}
+Customer.gender#phrase.action = set the gender of {this} to {gender}
+Customer.gender#phrase.navigation = {gender} of {this}
