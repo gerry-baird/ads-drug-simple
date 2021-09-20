@@ -10,4 +10,13 @@
   <tags key="ProviderId">
     <value><![CDATA[disconnectedProvider]]></value>
   </tags>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["drug-Selector"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
